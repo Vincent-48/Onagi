@@ -24,21 +24,9 @@ public class MainActivity extends AppCompatActivity {
         txtName = findViewById(R.id.txtName);
         txtAbout = findViewById(R.id.txtAbout);
         txtProfilePic = findViewById(R.id.imageView);
-        button1 = findViewById(R.id.button1);
-        button2 = findViewById(R.id.button2);
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                replaceFragment(new Fragment1());
-            }
-        });
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                replaceFragment(new Fragment2());
-            }
-        });
+
+
     }
     private void replaceFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
