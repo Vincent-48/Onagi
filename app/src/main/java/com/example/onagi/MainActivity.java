@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView txtName;
-    private TextView txtAbout;
-    private ImageView txtProfilePic;
+    TextView txtName;
+    TextView txtAbout;
+    ImageView txtProfilePic;
     Button button1, button2;
 
     @Override

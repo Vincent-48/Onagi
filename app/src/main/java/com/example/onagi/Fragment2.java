@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 
 public class Fragment2 extends Fragment {
-    private View view;
+    View view;
 
 
 
