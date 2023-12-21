@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 
 public class NotifyFragment extends Fragment {
+    View view;
 
 
 
@@ -21,6 +22,7 @@ public class NotifyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_notify, container, false);
+        view = inflater.inflate(R.layout.fragment_notify, container, false);
+        return view;
     }
 }
