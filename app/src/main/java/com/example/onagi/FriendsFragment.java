@@ -14,22 +14,14 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class FriendsFragment extends Fragment {
-
-
+    View view;
 
     public FriendsFragment() {
         // Required empty public constructor
     }
 
 
-    public static FriendsFragment newInstance(String param1, String param2) {
-        FriendsFragment fragment = new FriendsFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+
 
 
 
