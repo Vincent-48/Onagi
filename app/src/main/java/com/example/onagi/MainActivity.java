@@ -21,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        txtName = findViewById(R.id.txtName);
-        txtAbout = findViewById(R.id.txtAbout);
+
         txtProfilePic = findViewById(R.id.imageView);
 
 
