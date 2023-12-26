@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     TextView txtName;
     TextView txtAbout;
     ImageView txtProfilePic;
-    Button button1, button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
