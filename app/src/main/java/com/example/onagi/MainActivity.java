@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     TextView txtAbout;
     ImageView txtProfilePic;
 
-    @Override
+    @Overrides
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
