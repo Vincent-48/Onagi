@@ -11,15 +11,43 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.onagi.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
     TextView txtName;
     TextView txtAbout;
     ImageView txtProfilePic;
+    ActivityMainBinding binding;
 
     @Overrides
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        replaceFragment(new HomeFragment());
+
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()){
+                case R.id.home:
+                    replaceFragment(new HomeFragment());
+                    break;
+                case R.id.profile:
+                    replaceFragment(new ProfileFragment());
+                    break;
+                case R.id.messages:
+                    replaceFragment(new MessageFragment());
+                    break;
+                case R.id.notify:
+                    replaceFragment(new NotifyFragment());
+                    break;
+                case R.id.friends:
+                    replaceFragment(new FriendsFragment());
+
+                        break;
+
+            }
+            return true;
+        });
 
         txtProfilePic = findViewById(R.id.imageView);
 
