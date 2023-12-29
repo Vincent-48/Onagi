@@ -3,7 +3,9 @@
 
     <item android:title="Home"
         android:icon="@drawable/baseline_home_24"
+        android:iconTint="@color/black"
         android:id="@+id/home"/>
+
     <item android:title="Friends"
         android:icon="@drawable/baseline_people_24"
         android:id="@+id/friends"/>

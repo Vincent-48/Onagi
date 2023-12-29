@@ -7,6 +7,16 @@
     tools:context=".ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:visibility="visible"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
