@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_neutral60"
+    android:background="@color/material_dynamic_neutral601"
     tools:context=".NotifyFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,6 +12,6 @@
         android:layout_height="wrap_content"
         android:textSize="26sp"
         android:layout_gravity="center"
-        android:text="@string/notifications_fragments" />
+        android:text="@string/notify_fragments" />
 
 </FrameLayout>

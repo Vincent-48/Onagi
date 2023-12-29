@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(new FriendsFragment());
 
                         break;
-
             }
             return true;
         });
