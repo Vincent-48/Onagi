@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.onagi.databinding.ActivityMainBinding;
 
@@ -30,18 +31,23 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()){
                 case R.id.home:
                     replaceFragment(new HomeFragment());
+                    Toast.makeText(this,"Home section",Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.profile:
                     replaceFragment(new ProfileFragment());
+                    Toast.makeText(this,"Profile section",Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.messages:
                     replaceFragment(new MessageFragment());
+                    Toast.makeText(this,"Messages section",Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.notify:
                     replaceFragment(new NotifyFragment());
+                    Toast.makeText(this,"Notifications section",Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.friends:
                     replaceFragment(new FriendsFragment());
+                    Toast.makeText(this,"Friends section",Toast.LENGTH_SHORT).show();
 
                         break;
             }
